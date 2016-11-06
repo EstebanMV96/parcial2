@@ -179,36 +179,57 @@ Crear un free-style project con el nombre **nombre_proyecto**:
 ![alt tag](https://github.com/EstebanMV96/parcial2/blob/master/images/jenkins1.PNG)
 
 
-### General
+#### General
 
 En *project url* colocar la ruta del repositorio donde se encuentran los archivos con el código fuente y las pruebas.
 
-### Configurar el origen del código fuente
+#### Configurar el origen del código fuente
 
 En *Repository URL* colocar la ruta del mismo repositorio que se colocó en la sección de **General**, todo lo demás se coloca automáticamente.
 
 ![alt tag](https://github.com/EstebanMV96/parcial2/blob/master/images/jenkins2.PNG)
 
-### Disparadores de ejecucion
+#### Disparadores de ejecucion
 
 Activar la opción de *Ejecucion periodica* con "H/5 * * * * " en el valor de *Programador* lo que significa que las pruebas se realizarán cada 5 minutos. (Para más información dar click en el símbolo de pregunta de esa sección).
 
 ![alt tag](https://github.com/EstebanMV96/parcial2/blob/master/images/jenkins3.PNG)
 
-### Ejecutar
+#### Ejecutar
 
 Escoger la opción *Ejecutar linea de comandos* y en la sección de *Comandos* se pone el comando ```. $WORKSPACE/run_tests.sh``` para que se ejecute ese archivo shell (que debe estar ubicado en el repositorio mencionado anteriormente).
 
 ![alt tag](https://github.com/EstebanMV96/parcial2/blob/master/images/jenkins4.PNG)
 
-### Despues de ejecutar
+#### Despues de ejecutar
 
 Escoger la opción *Public JUnit test result report* y en la sección *Test resport XMLs* poner *unit_test.xml* como en este ejemplo o escoger el nombre de preferencia (este nombre debe coincidir con el que esté escrito al final en el archivo **run_tests.sh**).
 
 
 ![alt tag](https://github.com/EstebanMV96/parcial2/blob/master/images/jenkins5.PNG)
 
-      
+     
+     
+Si todo ha salido bien se vera algo así.
+
+
+![alt tag](https://github.com/EstebanMV96/parcial2/blob/master/images/jenkins6.PNG)
+
+
+###4) Ahora observamos los reportes que lanzo nuestra tarea y nos damos cuenta que los 4 test corridos que aparecen en el test_files.py estan correctos todos.
+
+![alt tag](https://github.com/EstebanMV96/parcial2/blob/master/images/jenkins7.PNG)
+
+![alt tag](https://github.com/EstebanMV96/parcial2/blob/master/images/jenkins8.PNG)
+
+La parte resaltada en amarillo nos indica que las 4 pruebas fueron correctas.
+
+
+###Referencias:
+https://atom.io/packages/markdown-pdf
+http://doc.pytest.org/en/latest/
+https://github.com/d4n13lbc/testproject/
+
 
 
 
