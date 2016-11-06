@@ -226,8 +226,11 @@ La parte resaltada en amarillo nos indica que las 4 pruebas fueron correctas.
 
 
 ###Referencias:
+
 https://atom.io/packages/markdown-pdf
+
 http://doc.pytest.org/en/latest/
+
 https://github.com/d4n13lbc/testproject/
 
 
