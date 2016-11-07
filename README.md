@@ -225,6 +225,8 @@ Si todo ha salido bien se vera algo así.
 La parte resaltada en amarillo nos indica que las 4 pruebas fueron correctas.
 
 
+Enlace del repositorio en GIT: https://github.com/EstebanMV96/parcial2
+
 ###Referencias:
 
 https://atom.io/packages/markdown-pdf
